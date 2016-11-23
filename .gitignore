@@ -1,0 +1,5 @@
+.DS_store
+lib/node_modules
+.sass-cache
+javascripts/firebaseGetter.js
+dist/app.js
