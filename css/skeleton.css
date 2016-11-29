@@ -199,7 +199,8 @@ input[type="reset"]:focus,
 input[type="button"]:focus {
   color: #333;
   border-color: #888;
-  outline: 0; }
+  outline: 0; 
+  background: white;}
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
@@ -301,7 +302,7 @@ ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%; }
 li {
-  margin-bottom: 1rem; }
+  margin-bottom: .25rem; }
 
 
 /* Code

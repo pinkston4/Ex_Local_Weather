@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Tennessee Weather</title>
+  <title>Good Morning Tennessee</title>
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">  
@@ -14,24 +14,44 @@
 </head>
 
 <body>
-
+  <div class="row user">
+    <div class="one columns buttonEvent" id="auth-btn">Login</div>
+    <div class="four columns buttonEvent" id="logout">Logout</div>
+    <div class="two columns buttonEvent" id="userNews">My News</div>
+    <div class="five columns" id="userInput">
+      <p>Search Weather by zip code:</p>
+      <input type="text" id="input" class="input" placeholder="ZipCode">
+      <button id="zip">Search</button>
+    </div>
+  </div>    
+  <h1>Good Morning Tennessee</h1>
   <div class="container">
-    <div class="row">
-      <div class="one column" id="auth-btn">Login</div>
-      <div class="one column" id="logout">Logout</div>
-    </div>    
     <nav class="navbar">
+      <h4>Weather</h4>
       <div class="row">
-        <div class="three columns" id="nashville">Nashville</div>
-        <div class="three columns" id="memphis">Memphis</div>
-        <div class="three columns" id="knox">Knoxville</div>
-        <div class="three columns" id="chatt">Chattanooga</div>
+        <div class="three columns button buttonEvent" id="nashville">Nashville</div>
+        <div class="three columns button buttonEvent" id="memphis">Memphis</div>
+        <div class="three columns button buttonEvent" id="knox">Knoxville</div>
+        <div class="three columns button buttonEvent" id="chatt">Chattanooga</div>
+      </div>
+      <h4>News</h4>
+      <div class="row">
+        <div class="three columns button buttonEvent" id="usa">Usa Today</div>
+        <div class="three columns button buttonEvent" id="AP">Associated Press</div>
+        <div class="three columns button buttonEvent" id="reuters">Reuters</div>
+        <div class="three columns button buttonEvent" id="newsweek">Newsweek</div>
       </div>
     </nav>
 
-    <div class="row">
-      <div id="weatherWrap" class="one-third column"></div>
+    <div id="domWrapper">
+      <div class="row" id="weatherGo">
+        <div id="weatherWrap" class="one-third column"></div>
+      </div>
+      <div class="row news" id="recent"></div>
+      <div class="row news" id="topStories"></div>
+      <div class="row news" id="popular"></div>
     </div>
+
   </div>
 
   <script type="text/javascript" src="dist/app.js"></script>

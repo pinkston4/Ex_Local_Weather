@@ -4,3 +4,4 @@ lib/node_modules
 javascripts/firebaseGetter.js
 dist/app.js
 javascripts/weatherGetter.js
+javascripts/newsGetter.js
